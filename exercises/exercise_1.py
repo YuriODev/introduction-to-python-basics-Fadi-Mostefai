@@ -6,9 +6,9 @@ def sum_coversion(num):
   str_num = str(num)
   for i in range(1, len(str_num) + 1):
     if i % 2 == 0:
-      digit2 += int(str_num[i])
+      digit2 += int(str_num[i-1])
     else:
-      digit1 += int(str_num[i])
+      digit1 += int(str_num[i-1])
   sum = str(digit1) + str(digit2)
   return sum
 
